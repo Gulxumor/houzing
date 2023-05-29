@@ -1,12 +1,12 @@
 import useId from "../hooks/useId";
-import Home from "../pages/Home";
-import Properties from "../pages/Properties";
-export const navbar = [
+import HomePage from "../pages/Home";
+import PropertiesPage from "../pages/Properties";
 
+export const navbar = [
     {
         id: useId,
         title: "Home",
-        element: <Home />,
+        element: <HomePage />,
         path: "/home",
         isPrivate: false,
         hidden: false,
@@ -14,7 +14,7 @@ export const navbar = [
     {
         id: useId,
         title: "Properties",
-        element: <Properties />,
+        element: <PropertiesPage />,
         path: "/properties",
         isPrivate: false,
         hidden: false,
