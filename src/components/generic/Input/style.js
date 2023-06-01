@@ -29,7 +29,6 @@ function getType({ type }) {
     };
 }
 
-
 export const Container = styled.input`
     min-width:120px;
     display: flex;
@@ -39,8 +38,18 @@ export const Container = styled.input`
     border: 1px solid #e6e9ec;
     outline: none;
     height: ${({ height }) => height ? `${height}px` : "44px"};
-    font-size: ${({ fs }) => fs ? `${fs}px` : "16px"};
     width: ${({ width }) => width ? `${width}px` : "100%"};
+    font-size: ${({ fs }) => fs ? `${fs}px` : "16px"};
+    padding-left: ${({ icon }) => icon ? "35px" : "20px"};
     /* ${getType} */
-    
 `;
+export const Wrapper = styled.div`
+    width: ${({ width }) => width ? `${width}px` : "100%"};
+    display: flex;
+    align-items: center;
+    position: relative;
+`
+export const Icon = styled.div`
+    position: absolute;
+    left: 10px;
+`

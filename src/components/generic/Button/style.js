@@ -43,6 +43,6 @@ export const Container = styled.button`
     ${getType}
     :active{
         opacity: 0.7;
-        transform:scale(1);
+        /* transform:scale(1); */
     };
 `;
